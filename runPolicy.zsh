@@ -9,8 +9,10 @@
 # in order to run a policy. It can handle up to 8 policy IDs or triggers passed to it in 
 # the arguments/parameters, which start from the 4th.
 
+	# Debug echos...
 #/bin/echo "Number of arguments: $#"
 #/bin/echo "Arguments passed: $@"
+
 	# Setup a number check variable.
 re='^[0-9]+$'
 
@@ -29,4 +31,3 @@ for ((i = 4; i <= ${#}; i++ )); do
 done
 
 exit 0
-
